@@ -39,6 +39,10 @@ html, body {
 
 .container {
   max-width: 1140px; }
+  
+  .container-works {
+  display: flex;
+}
 
 .site-title {
   font-size: 1.25rem;
