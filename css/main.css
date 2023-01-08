@@ -40,8 +40,28 @@ html, body {
 .container {
   max-width: 1140px; }
   
-  .container-works {
+.container-works {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 760px) {
+  .container-works {
+  flex-direction: row;
+}
+  
+.container-reverse2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 760px) {
+  .container-reverse2 {
+  flex-direction: row;
 }
 
 .site-title {
