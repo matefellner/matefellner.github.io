@@ -1,0 +1,24 @@
+* { box-sizing: border-box; margin: 0; }
+body { font-family: system-ui, sans-serif; background: #e1e4f5; min-height: 100vh; }
+.view { display: flex; flex-direction: column; align-items: center; gap: 12px;
+        padding: 24px 16px 80px; max-width: 480px; margin: 0 auto; }
+.hidden { display: none !important; }
+h1 { color: #4a5490; }
+input, textarea, button { font-size: 16px; padding: 10px; border: 1px solid #aab;
+        border-radius: 8px; width: 100%; }
+textarea { min-height: 120px; }
+button { background: #7c8ce0; color: white; border: none; cursor: pointer; }
+button:disabled { opacity: .5; }
+#maImg, #preview { width: 100%; border-radius: 12px; }
+.date { font-weight: bold; color: #4a5490; }
+.author { font-size: 14px; color: #667; }
+.tagline { font-style: italic; color: #4a5490; }
+nav { position: fixed; bottom: 0; left: 0; right: 0; display: flex;
+      background: white; border-top: 1px solid #ccd; }
+nav button { border-radius: 0; background: white; color: #4a5490; padding: 14px; }
+nav button.active { font-weight: bold; background: #eef0fb; }
+#lista { align-items: stretch; }
+.card { display: flex; gap: 10px; background: white; border-radius: 12px; padding: 10px; }
+.card img { width: 96px; height: 96px; object-fit: cover; border-radius: 8px; }
+#toast { position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+         background: #333; color: white; padding: 10px 16px; border-radius: 8px; z-index: 10; }

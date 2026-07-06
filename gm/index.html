@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#e1e4f5">
+<title>GMlékek</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon-192.png">
+</head>
+<body>
+
+<div id="login" class="view">
+  <h1>GMlékek</h1>
+  <input id="email" type="email" placeholder="Email" autocomplete="username">
+  <input id="password" type="password" placeholder="Jelszó" autocomplete="current-password">
+  <button id="loginBtn">Belépés</button>
+</div>
+
+<div id="ma" class="view hidden">
+  <img id="maImg" alt="">
+  <div id="maDate" class="date"></div>
+  <div id="maText"></div>
+  <div id="maAuthor" class="author"></div>
+  <p class="tagline">Ez a nap is egy szép randi volt!</p>
+  <button id="rerollBtn">Mutass még!</button>
+</div>
+
+<div id="uj" class="view hidden">
+  <input id="newDate" type="date">
+  <textarea id="newText" placeholder="Emlék"></textarea>
+  <input id="newPhoto" type="file" accept="image/*">
+  <img id="preview" class="hidden" alt="">
+  <button id="saveBtn">Beküldés</button>
+</div>
+
+<div id="lista" class="view hidden"></div>
+
+<nav id="nav" class="hidden">
+  <button data-view="ma">Ma</button>
+  <button data-view="uj">Új emlék</button>
+  <button data-view="lista">Emlékek</button>
+</nav>
+
+<div id="toast" class="hidden"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
